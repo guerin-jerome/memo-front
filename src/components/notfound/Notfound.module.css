@@ -1,0 +1,63 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 300px;
+    display: flex;
+}
+
+.subtitle {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 50px;
+    color: #7bed9f;
+}
+
+.explain {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 25px;
+    color: #f1f2f6;
+}
+
+.green {
+    color: #7bed9f;
+}
+
+.white {
+    color: #f1f2f6;
+}
+
+.gradient {
+    background: linear-gradient(0.25turn, #7bed9f, #f1f2f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: transparent;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    transform: rotate(0.25turn);
+    animation: rotate 2s ease-in-out infinite forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,41 @@
+.selectionable:hover, .active {
+    transform: scale(1.02);
+}
+
+.active, .true, .inactive, .selectionable {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.true, .inactive, .selectionable {
+    background-color: #747d8c;
+}
+
+.active {
+    box-shadow: 0px 0px 10px #f1f2f6;
+}
+
+.active {
+    background-color: #7bed9f;
+}
+
+.inactive {
+    pointer-events: none;
+}
+
+.success {
+    overflow: visible;
+    width: 23%;
+    animation: disparition 1s forwards;
+}
+
+@keyframes disparition {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

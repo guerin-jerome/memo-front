@@ -1,0 +1,203 @@
+.websiteTitle {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 150px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .websiteTitle {
+      font-size: 5.5em;
+    }
+  }
+
+.green {
+    color: #7bed9f;
+}
+
+.white {
+    color: #f1f2f6;
+}
+
+.gradient {
+    background: linear-gradient(0.25turn, #7bed9f, #f1f2f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: transparent;
+}
+
+.home {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2f3542;
+}
+
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    opacity: 0;
+    animation: topAppear 2.5s ease-out forwards;
+}
+
+.centered {
+    text-align: center;
+    opacity: 0;
+    animation: leftAppear 2.8s ease-out 0.8s forwards;
+}
+
+@media screen and (max-width: 640px) {
+    .centered {
+        margin: 10px;
+    }
+    .description {
+      font-size: 1em !important;
+    }
+  }
+
+.description {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 2em;
+    color: #f1f2f6;
+}
+
+.subtitle {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: #7bed9f;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 640px) {
+    .subtitle {
+      font-size: 1.2em;
+    }
+  }
+
+.bold {
+    font-weight: 400;
+}
+
+.nickname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input, .inputError {
+    width: 450px;
+    height: 35px;
+    background-color: #f1f2f6;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f3542;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 640px) {
+    .input, .inputError {
+      width: 95%;
+    }
+  }
+
+.input {
+    border: 1px solid #747d8c;
+}
+
+.inputError {
+    border: 2px solid #e66767;
+}
+
+.input::placeholder {
+    color: #9CA3AF;
+}
+
+.button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #747d8c;
+    color: #2f3542;
+    border: 1px solid #2f3542;
+    outline: none;
+}
+
+@media screen and (max-width: 640px) {
+    .button {
+      font-size: 1em;
+    }
+  }
+
+.button:hover {
+    transform: scale(1.02);
+    background: linear-gradient(0.25turn, #7bed9f, #f1f2f6);
+}
+
+.nickname, .button {
+    opacity: 0;
+    animation: topAppear 2s ease-out 1.8s forwards;
+}
+
+.error {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    color: #e66767;
+    font-style: italic;
+}
+
+@keyframes topAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes leftAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gameStart {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
